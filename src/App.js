@@ -1,4 +1,5 @@
 // Projects created with creat-react-app are configured to compile automatically.
+//hello is the component and props is the argument being passed into the component
 const Hello = (props) => {
   return (
     <div>
@@ -8,17 +9,20 @@ const Hello = (props) => {
     </div>
   )
 }
+
 //example of passing an argument into another function, callback 
 const App = () => {
-  const name = 'Peter'
-  const age = 10
+  const name = prompt('Please input your name')
+  const age = prompt('Put input your age')
 
   return (
-    <div>
+    <>
       <h1>Greetings</h1>
-      <Hello name='Maya' age={26 + 10} />
       <Hello name={name} age={age} />
-    </div>
+      <div> 
+     Greeting app created by <a href="https://github.com/jmeegan2" target="/blank" >James Meegan</a> 
+  </div>
+    </>
   )
 }
 
